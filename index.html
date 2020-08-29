@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Mouse Demo</title>
+    <link rel="stylesheet" href="magic-mouse.css" />
+  <script type="text/javascript" src="magic_mouse.js"></script>
+    <style>
+         body {
+             background-color: #222;
+             font-family: sans-serif;
+             text-align: center;
+             letter-spacing: .07rem;
+             color: #f2f2f2;
+         }   
+
+         h3 {
+             padding: .5rem;
+         }
+
+         .hoverable {
+            background-color: #000;
+            color: #f2f2f2;
+            padding: 1rem 2rem;
+            width: 15%;
+            margin: 5rem auto;
+         }
+
+         .footer {
+             position: absolute;
+             bottom: 2rem;
+             width: 99%;
+         }
+
+         .footer > a {
+             color: #34a853;
+             text-decoration: none;
+         }
+
+    </style>
+</head>
+<body>
+
+    <h3>This is a simple MagicMouse.js demo.</h3>
+    
+    <div class="hoverable magic-hover magic-hover__square">
+        Hover over this element.
+    </div>
+
+    <div class="footer">
+        Learn more about this library <a href="https://magicmousejs.web.app/">here </a> & <a href="https://github.com/dshongphuc/magic-mouse-js">here.</a>
+    </div>
+
+    <script type="text/javascript">
+        options = {
+        "cursorOuter": "circle-basic",
+        "hoverEffect": "circle-move",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 30,
+        "outerHeight": 30
+          };
+        magicMouse(options);
+    </script>
+</body>
+</html>
